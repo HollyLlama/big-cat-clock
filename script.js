@@ -23,7 +23,7 @@ if (time == wakeupTime) { //8am//
   image = "https://i2-prod.mirror.co.uk/incoming/article21744359.ece/ALTERNATES/s615b/0_Big-Cat-Rescue-Carole-Baskin-Joseph-Joe-Exotic-Maldonado-Passage.jpg"
 	messageText = "hey all you cool cats & kittens";
 } else if (time == lunchTime) { //1pm//
-	image = "https://dc.newsweek.com/en/full/2031015/tiger-king-murder-mayhem-madness-official-trailer.jpg?w=790&h=444&f=091aae8452d0ab9e6b34d204288e85fd";
+	image = "https://pmcvariety.files.wordpress.com/2020/03/tiger-king.jpg?w=681&h=383&crop=1";
 	messageText = "Feed me before I rip your face off!";
 } else if (time == napTime) { //3pm//
 	image = "https://i.insider.com/5d5c235bcd97847e990b478c?width=750&format=jpeg&auto=webp";
