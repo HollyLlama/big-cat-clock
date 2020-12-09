@@ -17,13 +17,13 @@ var updateClock = function()
 
 
 if (time == wakeupTime) { //8am//
-	image = "https://cpng.elsetge.cat/myimg/s/193-1933065_animal-king-of-the-jungle-tiger-theme-hd.jpg";
+	image = "https://pyxis.nymag.com/v1/imgs/531/7e8/c9d8e739373238f87597f41da55eedb777-5-Carole-Baskin-Song.2x.rsquare.w330.jpg";
 	messageText = "get the hell up";
 } else if (time < noon) { //12pm//
   image = "https://i2-prod.mirror.co.uk/incoming/article21744359.ece/ALTERNATES/s615b/0_Big-Cat-Rescue-Carole-Baskin-Joseph-Joe-Exotic-Maldonado-Passage.jpg"
 	messageText = "hey all you cool cats & kittens";
 } else if (time == lunchTime) { //1pm//
-	image = "https://pmcvariety.files.wordpress.com/2020/03/tiger-king.jpg?w=681&h=383&crop=1";
+	image = "https://qph.fs.quoracdn.net/main-qimg-6c1dcf22d733ea72a836685042798947";
 	messageText = "Feed me before I rip your face off!";
 } else if (time == napTime) { //3pm//
 	image = "https://i.insider.com/5d5c235bcd97847e990b478c?width=750&format=jpeg&auto=webp";
