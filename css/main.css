@@ -1,0 +1,484 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    display: block;
+    height: 1px;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/**** MOBILE ****/
+
+html {
+  background-color: #000;
+  font-size: 16px;
+  margin: 0;
+  max-width: 100%;
+  overflow-x:hidden;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background: url('../img/keyur-nandaniya-oEgiJNbYw8w-unsplash.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Bungee', Helvetica, Arial, sans-serif;
+  color: #ffcd73;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+header{
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-family: 'Bungee', cursive;
+}
+
+h4 #clock {
+  font-size: 1.5rem;
+  padding: .2em 0;
+}
+
+h1, h2, h3, h6 {
+  font-family: 'Bungee Shade', cursive;
+}
+
+blockquote {
+  font: .9em 'Bungee', cursive;
+  margin: 0 0 40px 0;
+  padding-top: 10px;
+  color: #ffcd73;
+}
+
+blockquote:before { content: '"'; }
+blockquote:after { content: '"'; }
+
+#lolcat {
+  flex-flow: column;
+  align-self: center;
+  border-radius: 10px;
+  border:10px solid #ffcd73;
+  width: 80%;
+  padding: 0;
+  margin: 0;
+}
+
+#wakeUpTimeSelector, #lunchTimeSelector, #napTimeSelector {
+  padding: .2em;
+  background-color: transparent;
+  margin-top: .5em;
+}
+
+#partyTimeButton {
+  background-color: #ffcd73;
+  width: 30%;
+  font-family: 'Bungee', cursive;
+  font-size: 1rem;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 1em 0;
+  margin-top: 50px;
+}
+
+footer p {
+  text-transform: uppercase;
+  font-size: .5rem;
+  padding-top: 50px;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+
+@media only screen and (min-width: 600px) {
+ /* For tablets: */
+
+ header{
+   font-size: 1.5rem;
+ }
+
+ .page {
+   font-size: 1.5rem;
+ }
+
+ h4 {
+   font-size: 1.7rem;
+   font-family: 'Bungee', cursive;
+ }
+
+ h4 #clock {
+   font-size: 1.7rem;
+   padding: .2em 0;
+ }
+
+ blockquote {
+   font-size: 1.9rem;
+   -webkit-text-stroke: .7px #ffcd73;
+ }
+
+ #wakeUpTimeSelector, #lunchTimeSelector, #napTimeSelector {
+   font-size: 1.5rem;
+ }
+
+ #partyTimeButton {
+   font-size: 1.5rem;
+ }
+
+ footer p {
+   padding-top: 10%;
+   font-size: .8rem;
+ }
+
+}
+
+/***********************************************************************/
+
+@media only screen and (min-width: 1366px) {
+/* For desktop: */
+
+body {
+  background: url('../img/keyur-nandaniya-0CXFhfKLIeA-unsplash.jpeg');
+  background-position: center bottom 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header{
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+.page {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  background-image: linear-gradient(to bottom right, black, transparent, black);
+}
+
+h4 {
+  font-size: 2rem;
+  font-family: 'Bungee', cursive;
+  width: 100%;
+  margin: 0;
+}
+
+h4 #clock {
+  font-size: 2rem;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.imagequote {
+  width: 40%;
+  padding: 2em 2em 0 2em;
+}
+
+blockquote {
+  font-size: 1.2rem;
+  -webkit-text-stroke: .7px #ffcd73;
+}
+
+#lolcat {
+  width: 90%;
+}
+
+.settime {
+  text-align: left;
+  font-size: 1.7rem;
+  padding-top: 4em;
+  width: 40%;
+}
+
+#wakeUpTimeSelector, #lunchTimeSelector, #napTimeSelector {
+  font-size: 1.7rem;
+  padding: .2em;
+  margin-top: 0;
+  margin-bottom: .5em;
+}
+
+#partyTimeButton {
+  font-size: 1rem;
+  width: 30%;
+}
+
+footer {
+  width: 100%;
+}
+
+footer p {
+  padding-top: 2em;
+  font-size: .8rem;
+}
+
+}
+
+   @media print,
+          (-webkit-min-device-pixel-ratio: 1.25),
+          (min-resolution: 1.25dppx),
+          (min-resolution: 120dpi) {
+       /* Style adjustments for high resolution devices */
+   }
+
+
+   /* ==========================================================================
+      Print styles.
+      Inlined to avoid the additional HTTP request:
+      http://www.phpied.com/delay-loading-your-print-css/
+      ========================================================================== */
+
+   @media print {
+       *,
+       *:before,
+       *:after {
+           background: transparent !important;
+           color: #000 !important; /* Black prints faster:
+                                      http://www.sanbeiji.com/archives/953 */
+           box-shadow: none !important;
+           text-shadow: none !important;
+       }
+
+       a,
+       a:visited {
+           text-decoration: underline;
+       }
+
+       a[href]:after {
+           content: " (" attr(href) ")";
+       }
+
+       abbr[title]:after {
+           content: " (" attr(title) ")";
+       }
+
+       /*
+        * Don't show links that are fragment identifiers,
+        * or use the `javascript:` pseudo protocol
+        */
+
+       a[href^="#"]:after,
+       a[href^="javascript:"]:after {
+           content: "";
+       }
+
+       pre,
+       blockquote {
+           border: 1px solid #999;
+           page-break-inside: avoid;
+       }
+
+       /*
+        * Printing Tables:
+        * http://css-discuss.incutio.com/wiki/Printing_Tables
+        */
+
+       thead {
+           display: table-header-group;
+       }
+
+       tr,
+       img {
+           page-break-inside: avoid;
+       }
+
+       img {
+           max-width: 100% !important;
+       }
+
+       p,
+       h2,
+       h3 {
+           orphans: 3;
+           widows: 3;
+       }
+
+       h2,
+       h3 {
+           page-break-after: avoid;
+       }
+   }

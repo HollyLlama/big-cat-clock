@@ -23,16 +23,16 @@ if (time == wakeupTime) { //8am//
   image = "https://i2-prod.mirror.co.uk/incoming/article21744359.ece/ALTERNATES/s615b/0_Big-Cat-Rescue-Carole-Baskin-Joseph-Joe-Exotic-Maldonado-Passage.jpg"
 	messageText = "hey all you cool cats & kittens";
 } else if (time == lunchTime) { //1pm//
-	image = "https://qph.fs.quoracdn.net/main-qimg-6c1dcf22d733ea72a836685042798947";
-	messageText = "Feed me before I rip your face off!";
+	image = "https://images.unsplash.com/photo-1576776295278-c15160d7f459?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2775&q=80";
+	messageText = "Feed me, NOW!";
 } else if (time == napTime) { //3pm//
-	image = "https://i.insider.com/5d5c235bcd97847e990b478c?width=750&format=jpeg&auto=webp";
-	messageText = "I hate you";
+	image = "https://lazypenguins.com/wp-content/uploads/2015/11/Bengal-Tiger-Napping.jpg";
+	messageText = "Zzzz";
 } else if (time == partyTime) { //9pm//
   image = "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB11Nrcv.img?h=552&w=750&m=6&q=60&u=t&o=f&l=f&x=1069&y=359";
-  messageText = "Get in, we're going to Vegas";
+  messageText = "Get in, we're goin' ta Vegas";
 } else if (time > evening) { //5pm//
-	messageText = "Are the animals happy? Who knows";
+	messageText = "Are the animals happy? Who knows.";
 }	else {
 	messageText = "that Carole friggin Baskin!";
 }
@@ -61,7 +61,7 @@ var showCurrentTime = function()
   if (seconds < 10)
   { seconds = "0" + seconds; }
     // put together the string that displays the time
-  var clockTime = hours + ":" + minutes + ":" + seconds + " " + meridian + "!";
+  var clockTime = hours + ":" + minutes + ":" + seconds + " " + meridian + "";
 
   clock.innerText = clockTime;
 };
@@ -86,12 +86,12 @@ var partyEvent = function() {
       isPartyTime = true;
       time = partyTime;
       partyTimeButton.innerText = "PARTY OVER";
-      partyTimeButton.style.backgroundColor = "#0A8DAB";
+      partyTimeButton.style.backgroundColor = "transparent";
    } else {
       isPartyTime = false;
       time = new Date().getHours();
       partyTimeButton.innerText = "PARTY TIME!";
-      partyTimeButton.style.backgroundColor = "#222";
+      partyTimeButton.style.backgroundColor = "#ffcd73";
    }
 };
 
