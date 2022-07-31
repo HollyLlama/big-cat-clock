@@ -29,7 +29,7 @@ if (time == wakeupTime) { //8am//
 	image = "https://lazypenguins.com/wp-content/uploads/2015/11/Bengal-Tiger-Napping.jpg";
 	messageText = "Zzzz";
 } else if (time == partyTime) { //9pm//
-  image = "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB11Nrcv.img?h=552&w=750&m=6&q=60&u=t&o=f&l=f&x=1069&y=359";
+  image = "https://media.wired.com/photos/614d1fc4aef2e52736bc9f67/master/pass/Science_TigerKing_MurderMayhemandMadness_LimitedSeries_Episode4_00_36_52_22_R.jpg";
   messageText = "Get in, we're goin' ta Vegas";
 } else if (time > evening) { //5pm//
 	messageText = "Are the animals happy? Who knows.";
@@ -86,11 +86,16 @@ var partyEvent = function() {
       isPartyTime = true;
       time = partyTime;
       partyTimeButton.innerText = "PARTY OVER";
+      partyTimeButton.style.color = "#ffcd73";
       partyTimeButton.style.backgroundColor = "transparent";
+      partyTimeButton.style.border =  "solid";
+      partyTimeButton.style.borderColor =  "#ffcd73";
+      partyTimeButton.style.borderWidth =  "5px";
    } else {
       isPartyTime = false;
       time = new Date().getHours();
       partyTimeButton.innerText = "PARTY TIME!";
+      partyTimeButton.style.color = "#000";
       partyTimeButton.style.backgroundColor = "#ffcd73";
    }
 };
